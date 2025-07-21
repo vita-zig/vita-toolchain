@@ -1,0 +1,16 @@
+.{
+    .name = .libelf,
+    .version = "0.0.0",
+    .fingerprint = 0xe87cad3b94e16360,
+    .minimum_zig_version = "0.14.1",
+    .dependencies = .{
+        .upstream = .{
+            .url = "https://repository.timesys.com/buildsources/l/libelf/libelf-0.8.13/libelf-0.8.13.tar.gz",
+            .hash = "N-V-__8AAPHrCQCnqsWIFAjl7O4rA7Q1Z6ILQ__MQv0yHjzO",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+    },
+}
