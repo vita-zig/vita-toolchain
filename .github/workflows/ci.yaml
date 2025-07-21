@@ -31,3 +31,9 @@ jobs:
 
       - name: Build
         run: zig build --summary all
+
+      - name: Push arifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: vita-toolchain-${{ matrix.os }}
+          path: zig-out/bin/*
