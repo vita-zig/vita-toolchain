@@ -6,9 +6,8 @@
 
     .dependencies = .{
         .@"vita-toolchain" = .{
-            // TODO: switch to upstream after the PR merge
-            .url = "git+https://github.com/vesim987/vita-toolchain?ref=thumb-stubs#d4655181cf19f20d325d0cd9ca1768fd6089f166",
-            .hash = "N-V-__8AAGpAFAAoLVUf9AOETWt4m7oKcSUkbZxZY5qPLL0r",
+            .url = "git+https://github.com/vitasdk/vita-toolchain#71f3789342f610a4eb3ba50fc33292c4900c6666",
+            .hash = "N-V-__8AAA5AFAAxyU-j5KWmrSv5JbciC7jNC1TF3V2pExO2",
         },
         .zlib = .{
             // switch to tag after pr is merged
