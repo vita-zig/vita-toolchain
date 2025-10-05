@@ -2,7 +2,7 @@
     .name = .vita_toolchain,
     .version = "0.0.0",
     .fingerprint = 0x6515430003e5e44d,
-    .minimum_zig_version = "0.14.0",
+    .minimum_zig_version = "0.15.1",
 
     .dependencies = .{
         .@"vita-toolchain" = .{
@@ -11,12 +11,14 @@
             .hash = "N-V-__8AAGpAFAAoLVUf9AOETWt4m7oKcSUkbZxZY5qPLL0r",
         },
         .zlib = .{
-            .url = "git+https://github.com/allyourcodebase/zlib?ref=1.3.1#0918e87b7629b9c6a50a08edd0ce30d849758faf",
-            .hash = "zlib-1.3.1-AAAAACEMAAA0qyoSrfgBb_p25ItL4yRf_TBRk-26TYMF",
+            // switch to tag after pr is merged
+            .url = "git+https://github.com/allyourcodebase/zlib#3bb8a00ac3d4fefaf4672e270c476e75f7c87fa0",
+            .hash = "zlib-1.3.1-ZZQ7lasMAABC0OqkqDzwkWDTJHablTIjcd93Pb6kB__r",
         },
         .libzip = .{
-            .url = "git+https://github.com/allyourcodebase/libzip?ref=1.11.2#6e06eaff35303c3ace35c584e0aa543480b24f2f",
-            .hash = "libzip-1.11.2-WX_L8Ck4AADFFAXJ5QvIrrZ9osNgIQJWPgih_6rg8K97",
+            // switch to tag after pr is merged
+            .url = "git+https://github.com/allyourcodebase/libzip#fd3051f719aee93872a55f554b0b3fc5270aab21",
+            .hash = "libzip-1.11.2-WX_L8EQ4AAC9YSQ1dhuNALqIuIPgZNkBdjQ0Ki7wC_W3",
         },
         .libyaml = .{
             .url = "git+https://github.com/vesim987/libyaml#46b4a681d75cccbcb86c786b5c94e4ff910bd994",
@@ -30,5 +32,6 @@
     .paths = .{
         "build.zig",
         "build.zig.zon",
+        "vendor",
     },
 }
